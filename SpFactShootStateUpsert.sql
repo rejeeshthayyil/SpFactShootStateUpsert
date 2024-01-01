@@ -1,11 +1,10 @@
 Create proc ETL.[SpFactShootStateUpsert]@ShootStateEventFeed [ETL].[UDFFactShootState] READONLY
 AS 
 BEGIN
-		SET NOCOUNt, XACT_ABORT ON;
-
+SET NOCOUNt, XACT_ABORT ON;
 	--delare the variables
 DECLARE @LastUpdatedTimeStamp date =GETDATE();
-
+--test
 --source table variables
 
 DECLARE @SourcecorrelationId	int
